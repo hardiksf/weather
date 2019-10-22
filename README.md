@@ -1,8 +1,8 @@
-#Weather App
+# Weather App
 - Weather app using openweathermap.org API
 - Images are from <https://pixabay.com/>
 
-###Demo
+### Demo
 ![clear.png](./src/images/clear.png)
 
 ![Clouds](./src/images/clouds.png)
