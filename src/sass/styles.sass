@@ -1,2 +1,78 @@
-body
-    color: red
+$blueis-grey: #8390A3
+$light-grey: #F2F2F2
+$dim-grey: #444
+
+body 
+    color: white
+
+.weather, .current-weather
+    display: flex
+    flex-direction: column
+    align-items: center
+label
+    padding: 5vw
+input
+    border: dashed 1px
+    padding: 4vw
+    margin-bottom: 3vw
+    width: 35vw
+    font-size: 4vw
+.search-btn
+    color: white
+    background: $blueis-grey
+    border: $dim-grey
+    padding: 4vw
+    width: 35vw
+    font-size: 4vw
+
+//font
+.weather, .current-weather, input, .search-btn
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+.city
+    font-size: 10vw
+
+.main
+    font-size: 5vw
+
+.temperature
+    font-size: 25vw
+
+.today-min-max, .sunrise-sunset
+    display: flex
+    justify-content: space-between
+    width: 130%
+    font-size: 5vw
+
+.five-day
+    margin: 5vw 0 3vw
+
+.each-item
+    display: grid
+    grid-template-columns: 1.5fr 0.6fr 2.3fr
+    width: auto
+
+.temp
+    margin: 0 5vw
+
+// background image
+.clear-sky
+    background: url('../images/clear-sky.jpg')
+    background-size: cover
+
+.overcast-clouds
+    background: url('../images/overcast-clouds.jpg')
+    background-size: cover
+
+.scattered-clouds
+    background: url('../images/scattered-clouds.jpg')
+    background-size: cover
+
+.light-rain
+    background: url('../images/light-rain.jpg')
+    background-size: cover
+
+.moderate-rain
+    background: url('../images/moderate-rain.jpg')
+    background-size: cover
+    color: black

@@ -22,12 +22,20 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     module: {
-        rules: [{
-            test: /\.sass$/,
-            use: ['style-loader',
-                'css-loader',
-                "sass-loader"
-            ],
-        },],
+        rules: [
+            {
+                test: /\.sass$/,
+                use: ['style-loader',
+                    'css-loader',
+                    "sass-loader"
+                ],
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
+        ],
     },
 };
